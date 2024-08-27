@@ -1,0 +1,32 @@
+.conteudo{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+
+.botao{
+    display: flex;
+    justify-content: space-around;
+}
+
+button[type="submit"]{
+    background-color: rgb(66, 144, 66);
+    border-radius: 8px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+button[type="reset"]{
+    background-color: rgb(196, 70, 70);
+    border-radius: 8px;
+    border: 1px solid;
+    cursor: pointer;
+}
