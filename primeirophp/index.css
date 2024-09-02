@@ -1,32 +1,80 @@
-.conteudo{
+body {
+    font-size: 30px;
+}
+
+.conteudo {
     display: flex;
     justify-content: center;
 }
 
-h1{
+input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+h1 {
     text-align: center;
 }
 
-.name{
+.name {
     display: flex;
     flex-direction: column;
 }
 
-.botao{
+.botao {
     display: flex;
     justify-content: space-around;
 }
 
-button[type="submit"]{
+#nome::placeholder,
+#sobrenome::placeholder,
+#cpf::placeholder {
+    text-align: center;
+    font-size: 20px;
+}
+
+button[type="submit"] {
     background-color: rgb(66, 144, 66);
     border-radius: 8px;
     border: 1px solid;
     cursor: pointer;
+    font-size: 20px;
 }
 
-button[type="reset"]{
+button[type="reset"] {
     background-color: rgb(196, 70, 70);
     border-radius: 8px;
     border: 1px solid;
     cursor: pointer;
+    font-size: 20px;
 }
+
+table {
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+th {
+    font-size: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.tabela {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+td{
+    font-size: 20px;
+    padding: 10px;
+}
+

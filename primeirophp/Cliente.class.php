@@ -33,5 +33,15 @@ class Cliente
         return $conexao;
     }
 
+    public function buscaCliente($conexao)
+    {
+        $sql = "SELECT * FROM cliente";
+        $stm = $conexao->prepare($sql);
+        $stm->execute();
+        return $stm->fetchAll(PDO::FETCH_OBJ);
+    }
+
     //instancia = um novo objeto criado dessa classe, com o operador new
 }
+
+?>

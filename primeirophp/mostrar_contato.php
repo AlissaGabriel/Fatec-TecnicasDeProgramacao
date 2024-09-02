@@ -14,13 +14,15 @@ if ($_GET) {
     // $obj->cpf = $_GET["cpf"];
 
     $msg = $obj->inserir($conect);
-    echo $msg;
+
+    header("location: index.php?msg=$msg");
+    die();
 
     // echo "<pre>";
     // var_dump($obj);
     // echo "</pre>";
 } else {
-    header("location:index.html");
+    header("location:form_cliente.html");
 }
 
 // echo "<h1 style='color:purple'>O nome é: " . $_GET["nome"] . "</h1> <br>";
