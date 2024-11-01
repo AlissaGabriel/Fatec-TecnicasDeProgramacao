@@ -30,4 +30,6 @@ class Rotas
 $route = new Rotas();
 $route->get("/", [InicioController::class, "inicio"]);
 $route->get("/categoria", [CategoriaController::class, "listar"]);
+$route->get("/inserirCategoria",[CategoriaController::class,"inserir"]);
+$route->post("/inserirCategoria",[CategoriaController::class,"inserir"]);
 $route->get("/produto", [ProdutoController::class, "listar"]);
