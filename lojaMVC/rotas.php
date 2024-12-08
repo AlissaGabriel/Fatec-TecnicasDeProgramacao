@@ -32,14 +32,24 @@ $route->get("/", [InicioController::class, "inicio"]);
 //rotas de categoria
 $route->get("/categoria", [CategoriaController::class, "listar"]);
 
-$route->get("/inserirCategoria",[CategoriaController::class,"inserir"]);
+$route->get("/inserirCategoria", [CategoriaController::class, "inserir"]);
 
-$route->post("/inserirCategoria",[CategoriaController::class,"inserir"]);
+$route->post("/inserirCategoria", [CategoriaController::class, "inserir"]);
 
-$route->get("/excluirCategoria",[CategoriaController::class,"excluir"]);
+$route->get("/excluirCategoria", [CategoriaController::class, "excluir"]);
 
-$route->get("/alterarCategoria",[CategoriaController::class,"alterar"]);
-	
-	$route->post("/alterarCategoria",[CategoriaController::class,"alterar"]);
+$route->get("/alterarCategoria", [CategoriaController::class, "alterar"]);
+
+$route->post("/alterarCategoria", [CategoriaController::class, "alterar"]);
 //rotas de produto
 $route->get("/produto", [ProdutoController::class, "listar"]);
+
+$route->get("/inserirProduto", [ProdutoController::class, "inserir"]);
+
+$route->post("/inserirProduto", [ProdutoController::class, "inserir"]);
+
+$route->get("/alterarProduto", [ProdutoController::class, "alterar"]);
+
+$route->post("/alterarProduto", [ProdutoController::class, "alterar"]);
+
+$route->get("/alterarSituacao", [ProdutoController::class, "alterarSituacao"]);
